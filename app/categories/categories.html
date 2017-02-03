@@ -1,0 +1,35 @@
+
+
+
+<div class="row">
+
+
+	<div class="col-8-md">
+		<h3>Contact Categories </h3>
+
+		<div class="col-6-md" >
+		<label>Add New <input type="text""class="form-control" ng-model="newCat.catName" /></label></br>
+		
+		<input type="button" class="btn btn-primary" ng-click="newCat(newCat)" value="Add"/>
+
+
+	<h3>Current Categories</h3>
+
+
+		<ul>
+			<li ng-repeat="category in currentCategories" class="list-group-item" ng-model="category">
+
+			{{category.catName}}
+			<button type="button" ng-click="deleteCat(category)" class="btn">Delete</button>
+			</li>
+		</ul>
+
+
+	</div>
+
+	menu component add here.
+
+	<rolo-menu></rolo-menu>
+
+	
+</div>

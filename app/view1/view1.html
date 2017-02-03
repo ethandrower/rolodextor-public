@@ -1,0 +1,27 @@
+
+<div class="row">
+	<div class="col-md-8 bg-info">
+		<h3>These are your alerting contacts. Reach out today! </h3>
+
+<label>Filter By Category </label> <select name="show-filter" ng-model="catFilter" 
+    ng-options="category as category.catName for category in userCategories">
+   
+  </select>
+
+
+
+		<ul>
+			
+			<li ng-repeat="connect in connections | filter : {catId : catFilter.catId|| undefined }: true " class="connect list-group-item"><a href="#!/connectdetail/{{connect.id}}"> {{connect.attributes.connectName}}</a> <button type="button" class="btn btn-primary btnfloat">Snooze</button> 
+			</li>
+
+		</ul>
+	</div>
+
+
+
+
+	<rolo-menu></rolo-menu>
+
+
+</div>

@@ -1,0 +1,46 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+li.connect {
+
+	margin: 2em 0em 2em 0em;
+}
+
+
+.testbg {
+
+  background-color: #7E7E7E;
+}
+
+.menu-rolo {
+
+  background-color: #F1C3E1;
+}
+
+.btnfloat {
+
+  float: right;
+}
